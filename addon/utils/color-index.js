@@ -1,5 +1,6 @@
 export default function (seedText, colorsLength) {
-  return 0;
+  let code = hashCode(seedText);
+  return Math.abs(Math.floor(code % colorsLength));
 }
 
 // Private
